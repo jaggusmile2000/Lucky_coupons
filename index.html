@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="theme-color" content="#f6e7ff">
+<title>Lucky Coupons As U Wish 💗</title>
+<!-- Just for us: no external fonts, scripts, trackers or share buttons. Everything lives in this one file. -->
+<style>
+:root{--rose:#b83a7a;--plum:#4a3258;--violet:#7a5cc0;--paper:#fffafc;--mauve:#8a5f9c;
+  --serif:Georgia,'Times New Roman',serif;--sans:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{background:#fbeefa}
+body{margin:0;min-height:100vh;padding:34px 14px 130px;text-align:center;color:var(--plum);font:16px/1.5 var(--sans)}
+button{font:inherit;color:inherit}
+.hidden{display:none!important}
+
+/* ---------- dreamy pink & lavender backdrop ---------- */
+body::before{content:"";position:fixed;inset:0;z-index:-2;
+  background:radial-gradient(60% 45% at 8% 0%,#ffcfe5,transparent 70%),radial-gradient(55% 45% at 100% 18%,#d7c9ff,transparent 70%),
+  radial-gradient(60% 45% at 0% 100%,#e3d3ff,transparent 70%),radial-gradient(55% 40% at 100% 100%,#ffd6ea,transparent 70%),linear-gradient(160deg,#fff3f9,#f1eaff)}
+
+/* ---------- header ---------- */
+h1{margin:0;font:italic 400 clamp(2.3rem,10vw,4.2rem)/1.05 var(--serif);letter-spacing:-.01em}
+h1 .grad{background:linear-gradient(90deg,#d8508f,#8b6bd6);-webkit-background-clip:text;background-clip:text;color:transparent}
+.ribbon{display:flex;align-items:center;justify-content:center;gap:12px;max-width:300px;margin:14px auto 12px;color:#c9a6dc;font-size:.9rem}
+.ribbon::before,.ribbon::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,#d8bdea)}
+.ribbon::after{transform:scaleX(-1)}
+.subtitle{max-width:420px;margin:0 auto 22px;line-height:1.65;color:#6b4a86}
+
+/* ---------- panels ---------- */
+.panel{max-width:820px;margin:0 auto}
+.panel>h2{margin:6px 0 2px;font:italic 400 2.1rem var(--serif);color:var(--rose)}
+.sub{margin:0 0 4px;font-size:.95rem;color:var(--mauve)}
+.hearts{display:flex;justify-content:center;gap:6px;margin:10px 0 0;font-size:1.05rem;line-height:1}
+.hearts span{color:#e8588c}
+.hearts span.gone{color:#e5d3ef}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:14px;margin-top:18px}
+.tile{display:flex;flex-direction:column;align-items:center;gap:6px;padding:16px 8px 14px;border-radius:22px;cursor:pointer;
+  background:rgba(255,255,255,.62);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border:1px solid #fff;box-shadow:0 8px 24px #a98bd826}
+.tile-name{font:italic 700 1.05rem/1.25 var(--serif);color:var(--rose)}
+footer{max-width:420px;margin:38px auto 0;font-size:.9rem;color:#8a6aa8;line-height:1.7}
+.linkbtn{border:0;background:none;padding:0;text-decoration:underline;color:inherit;cursor:pointer}
+
+/* ---------- love coupons: real tickets with notches ---------- */
+.coupons{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px;margin-top:20px;text-align:left}
+.coupon{position:relative;filter:drop-shadow(0 10px 14px #a98bd830)}
+.ticket{position:relative;display:grid;grid-template-columns:88px 1fr;min-height:132px;overflow:hidden;border-radius:18px;
+  background:linear-gradient(135deg,rgba(255,255,255,.95),rgba(255,246,252,.9));
+  -webkit-mask-image:radial-gradient(circle 11px at 89px 0,transparent 10.5px,#000 11px),radial-gradient(circle 11px at 89px 100%,transparent 10.5px,#000 11px);
+  mask-image:radial-gradient(circle 11px at 89px 0,transparent 10.5px,#000 11px),radial-gradient(circle 11px at 89px 100%,transparent 10.5px,#000 11px);
+  -webkit-mask-composite:source-in;mask-composite:intersect}
+.stub{display:grid;place-items:center;background:linear-gradient(170deg,var(--c1),var(--c2))}
+.stub b{display:grid;place-items:center;width:54px;height:54px;border-radius:50%;background:#ffffffb8;box-shadow:inset 0 0 0 2px #fff,0 4px 10px #8b6bd62b;font-size:1.65rem;font-weight:400;line-height:1}
+.cbody{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:4px;padding:16px 16px 16px 18px;border-left:2px dashed #d9bfe9;margin-left:1px}
+.cbody h3{margin:0;font:italic 700 1.25rem/1.2 var(--serif);color:var(--rose)}
+.cbody p{margin:0 0 8px;font-size:.92rem;line-height:1.5;color:#5d4670}
+.redeem{border:0;border-radius:999px;padding:9px 18px;cursor:pointer;color:#fff;font-weight:600;background:linear-gradient(135deg,#e0679f,#9a7be0);box-shadow:0 5px 12px #b83a7a33}
+.coupon .done{margin:0;font-size:.88rem;font-weight:600;color:#8a3a7c}
+.stamp{display:none;position:absolute;right:14px;top:12px;padding:3px 12px;border:2px solid var(--rose);border-radius:10px;color:var(--rose);font:italic 700 .95rem var(--serif);transform:rotate(-8deg);background:#fffafccc}
+.coupon.used .stamp{display:block}
+.coupon.used .ticket{filter:saturate(.55)}
+.coupon.used h3{padding-right:6.4rem;opacity:.7}
+
+/* ---------- surprise boxes ---------- */
+.gbox{position:relative;display:block;width:6em;height:6.4em;margin:.6em auto 0;font-size:14px}
+.gbox>i{position:absolute;display:block;font-style:normal}
+.gbody{left:.35em;right:.35em;bottom:0;height:4em;border-radius:.5em;background:var(--c);overflow:hidden}
+.gbox>.gbody{display:grid;place-items:end center;padding-bottom:.4em}
+.gbody::after{content:"";position:absolute;left:50%;width:1em;margin-left:-.5em;top:0;bottom:0;background:#ffffff99}
+.gbody::before{content:"?";position:relative;z-index:2;font:700 1.5em var(--serif);color:#fff}
+.glid{left:0;right:0;top:1.9em;height:1.6em;z-index:3;border-radius:.5em;background:color-mix(in srgb,var(--c) 78%,#fff);transform-origin:left bottom;box-shadow:0 .2em .4em #0001}
+.glid::after{content:"";position:absolute;left:50%;width:1em;margin-left:-.5em;top:0;bottom:0;background:#ffffffb3}
+.glid::before{content:"🎀";position:absolute;left:50%;top:-1.2em;transform:translateX(-50%);font-size:1.7em;line-height:1}
+.gift.open .glid{transform:translate(.6em,-1.6em) rotate(16deg)}
+.gift.open .gbody::before{content:"💖"}
+
+/* ---------- popup for surprises ---------- */
+.overlay{position:fixed;inset:0;display:none;align-items:center;justify-content:center;padding:14px;background:#4a325888;z-index:20}
+.overlay.show{display:flex}
+.card{position:relative;width:min(560px,100%);max-height:92vh;overflow:auto;padding:26px 18px 24px;border:10px solid transparent;border-radius:22px;box-shadow:0 24px 70px #3a1f5566;
+  background:linear-gradient(var(--paper),var(--paper)) padding-box,repeating-linear-gradient(-45deg,#f6a5c9 0 12px,#fff 12px 20px,#b9a6f0 20px 32px,#fff 32px 40px) border-box}
+.card h2{margin:0 34px 12px;font:italic 400 1.9rem/1.15 var(--serif);color:var(--rose)}
+.btn{border:0;border-radius:999px;padding:10px 18px;cursor:pointer;background:#f6e3fb;color:#8a3a7c;font-weight:600}
+.close{position:absolute;right:8px;top:8px;width:36px;height:36px;padding:0}
+.paper{text-align:left;padding:0 6px 0 18px;border-left:2px solid #f0b3d3;background:repeating-linear-gradient(transparent 0 calc(2rem - 1px),#eed6ef calc(2rem - 1px) 2rem)}
+.note-title{margin:0 0 2rem;font:italic 700 1.4rem/2rem var(--serif);color:var(--rose)}
+.message{font:1.08rem/2rem var(--serif);white-space:pre-wrap}
+
+/* ---------- bottom tab bar (thumb friendly) ---------- */
+.tabs{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(10px + env(safe-area-inset-bottom));z-index:5;display:flex;gap:4px;width:min(340px,calc(100% - 20px));padding:6px;border-radius:26px;background:rgba(255,255,255,.78);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid #fff;box-shadow:0 10px 30px #8b6bd633}
+.tabs button{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 2px;border:0;border-radius:20px;background:none;color:#6b4a86;font-weight:600;font-size:.76rem;cursor:pointer}
+.tabs button span{font-size:1.3rem;line-height:1}
+.tabs button[aria-selected=true]{background:linear-gradient(135deg,#ffd0e6,#dccfff);color:var(--rose)}
+
+:focus-visible{outline:3px solid var(--violet);outline-offset:3px}
+</style>
+</head>
+<body>
+
+<h1><span class="grad">Lucky Coupons As U Wish</span> 💗</h1>
+<div class="ribbon" aria-hidden="true">✦ 💗 ✦</div>
+<p class="subtitle">For my Sweetipie. Ten little vouchers you can cash in whenever you like, and a few surprises waiting in the boxes.</p>
+
+<main>
+  <!-- 🎟 LOVE COUPONS -->
+  <section class="panel" id="tab-coupons">
+    <h2>Love coupons</h2>
+    <p class="sub">Tap redeem, press send on the text that opens, and I'll make it happen · <span id="couponsCount"></span></p>
+    <div class="hearts" id="hearts" aria-hidden="true"></div>
+    <div class="coupons" id="coupons"></div>
+  </section>
+
+  <!-- 🎁 SURPRISE BOXES -->
+  <section class="panel hidden" id="tab-surprises">
+    <h2>Surprise boxes</h2>
+    <p class="sub">No peeking, just tap · <span id="boxesCount"></span></p>
+    <div class="grid" id="boxes"></div>
+  </section>
+</main>
+
+<footer>
+  Made with love, just for us 🤍<br>
+  Nothing is sent unless you press send on the text message. Your progress stays on this device.
+  <br><button class="linkbtn" id="reset">Start fresh</button>
+</footer>
+
+<nav class="tabs" aria-label="Sections">
+  <button data-tab="coupons" aria-selected="true"><span>🎟️</span>Coupons</button>
+  <button data-tab="surprises" aria-selected="false"><span>🎁</span>Surprises</button>
+</nav>
+
+<!-- popup used for surprises -->
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-label="Surprise message">
+  <article class="card">
+    <button class="btn close" id="close" aria-label="Close">×</button>
+    <h2 id="readTag"></h2>
+    <div class="paper">
+      <div class="note-title" id="title"></div>
+      <div class="message" id="message"></div>
+    </div>
+  </article>
+</div>
+
+<script>
+// =====================================================================
+//  EDIT ME: all the words live here. Change any text between the quotes.
+// =====================================================================
+
+// ---- Your phone number with country code, e.g. "+15551234567".
+//      When he taps Redeem, a text to this number opens with the message ready to send.
+//      Leave it empty ("") and he will pick the contact himself.
+const MY_NUMBER = "";
+
+// ---- Love coupons (c1/c2 = the two stub colors)
+const coupons = [
+  {emoji:"📞", c1:"#ffc2dd", c2:"#e4d3ff", title:"One extra-long video call", text:"A call that goes as long as you want it to. No watching the clock, and no hanging up first."},
+  {emoji:"🎙️", c1:"#e4d3ff", c2:"#ffc2dd", title:"One cute voice note", text:"Ask me for a voice note and I'll send you one, as sweet and silly as you like."},
+  {emoji:"🍝", c1:"#ffc2dd", c2:"#d6c4fa", title:"Virtual lunch or dinner date", text:"You pick lunch or dinner. We each make or order something nice and eat together over video."},
+  {emoji:"☀️", c1:"#d6c4fa", c2:"#ffc2dd", title:"Good morning call", text:"I'll call first thing to start your day with my voice. No snooze button allowed."},
+  {emoji:"💌", c1:"#ffc2dd", c2:"#e4d3ff", title:"A surprise letter from me", text:"A letter written by me, with little doodles, sent your way when you least expect it."},
+  {emoji:"😘", c1:"#e4d3ff", c2:"#ffc2dd", title:"Ten kisses, delivered", text:"Ten kisses from me, delivered whenever you ask for them."},
+  {emoji:"🎁", c1:"#ffc2dd", c2:"#d6c4fa", title:"Surprise delivery", text:"Something small and sweet, on its way to your door. Don't ask what it is."},
+  {emoji:"📸", c1:"#d6c4fa", c2:"#ffc2dd", title:"Photo of the day", text:"Ask for it and I'll send you a photo from my day, picked just for you."},
+  {emoji:"🎬", c1:"#ffc2dd", c2:"#e4d3ff", title:"Movie night together", text:"A cozy video-call movie night. You pick the movie, I bring the snacks and the commentary."},
+  {emoji:"🎨", c1:"#e4d3ff", c2:"#ffc2dd", title:"A little doodle for you", text:"A drawing made just for him."}
+];
+
+// ---- Surprise boxes (hidden until opened)
+const boxes = [
+  {color:"#f6a5c9", title:"A tiny dare",       text:"Send me a selfie with your silliest face. Right now. No overthinking! 🤪"},
+  {color:"#c9b6f2", title:"A memory to share", text:"Tell me your favorite moment of ours so far, and I’ll tell you mine. 💭"},
+  {color:"#f9b4c8", title:"Make a wish",       text:"Close your eyes, make one wish for our future, then send it to me. I’ll keep it safe in my heart. ✨"},
+  {color:"#b9a8f0", title:"Kisses unlocked",   text:"Congratulations! You’ve unlocked five kisses. Please claim them on our next call. 😘"},
+  {color:"#fbc0d6", title:"Picnic for two",    text:"Spread a blanket on your floor, grab some snacks and join me on a video-call picnic, from two different places. 🧺"},
+  {color:"#d9c3ff", title:"Our song",          text:"Pick a song that makes you think of me and send it. I’ll do the same, and we’ll press play at the same time. 🎶"},
+  {color:"#f4a0bf", title:"Compliment jackpot",text:"You are ridiculously handsome, endlessly kind and the best part of my day. Jackpot! 🎰💖"},
+  {color:"#cbb5f7", title:"Three questions",   text:"What made you smile today? What are you looking forward to? What do you miss most about me? Answer all three. 💬"}
+];
+
+// =====================================================================
+//  How it works (you don’t need to change anything below)
+// =====================================================================
+const $ = id => document.getElementById(id);
+const make = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html) e.innerHTML = html; return e; };
+
+// progress is remembered on this device only
+const store = {
+  get(k, d) { try { const v = localStorage.getItem('lovejar-' + k); return v ? JSON.parse(v) : d; } catch { return d; } },
+  set(k, v) { try { localStorage.setItem('lovejar-' + k, JSON.stringify(v)); } catch {} }
+};
+const boxesOpened = new Set(store.get('boxes', []));
+let used = store.get('vouchers', {});
+let lastFocus = null;
+
+// ---------- tabs ----------
+function showTab(name) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.toggle('hidden', p.id !== 'tab-' + name));
+  document.querySelectorAll('.tabs button').forEach(b => b.setAttribute('aria-selected', b.dataset.tab === name));
+  window.scrollTo(0, 0);
+}
+document.querySelectorAll('.tabs button').forEach(b => b.addEventListener('click', () => showTab(b.dataset.tab)));
+
+// ---------- popup ----------
+const overlay = $('overlay');
+function openPopup() {
+  if (!overlay.classList.contains('show')) { lastFocus = document.activeElement; overlay.classList.add('show'); }
+  $('close').focus();
+}
+function closePopup() {
+  overlay.classList.remove('show');
+  if (lastFocus && lastFocus.focus) lastFocus.focus();
+}
+function showRead({ tag, title, text }) {
+  $('readTag').textContent = tag;
+  $('title').textContent = title;
+  $('message').textContent = text;
+  document.querySelector('.card').scrollTop = 0;
+  openPopup();
+}
+$('close').addEventListener('click', closePopup);
+overlay.addEventListener('click', e => { if (e.target === overlay) closePopup(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closePopup(); });
+
+// ---------- 🎟 love coupons ----------
+function renderCoupons() {
+  $('coupons').innerHTML = '';
+  coupons.forEach((c, i) => {
+    const date = used[i] && new Date(used[i]).toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
+    const el = make('article', 'coupon' + (used[i] ? ' used' : ''),
+      `<div class="ticket"><div class="stub"><b>${c.emoji}</b></div><div class="cbody"><h3></h3><p></p>` +
+      (used[i] ? `<p class="done">Redeemed ${date}. Text me to make it happen 💕</p>` : `<button class="redeem">Redeem this 💌</button>`) +
+      `</div><span class="stamp">Redeemed</span></div>`);
+    el.style.cssText = `--c1:${c.c1};--c2:${c.c2}`;
+    el.querySelector('h3').textContent = c.title;
+    el.querySelector('.cbody p').textContent = c.text;
+    const btn = el.querySelector('.redeem');
+    if (btn) btn.addEventListener('click', () => {
+      used[i] = new Date().toISOString();
+      store.set('vouchers', used);
+      renderCoupons();
+      const msg = `I redeemed my coupon: ${c.title} 💌`;
+      location.href = `sms:${MY_NUMBER}?&body=${encodeURIComponent(msg)}`;
+    });
+    $('coupons').appendChild(el);
+  });
+  const left = coupons.length - Object.keys(used).length;
+  $('couponsCount').textContent = `${left} of ${coupons.length} left`;
+  $('hearts').innerHTML = coupons.map((_, i) => `<span class="${used[i] ? 'gone' : ''}">♥</span>`).join('');
+}
+renderCoupons();
+
+// ---------- 🎁 surprise boxes ----------
+const boxesCount = () => $('boxesCount').textContent = `${boxesOpened.size} of ${boxes.length} opened`;
+boxes.forEach((x, i) => {
+  const b = make('button', 'tile gift' + (boxesOpened.has(i) ? ' open' : ''),
+    `<span class="gbox" style="--c:${x.color}"><i class="gbody"></i><i class="glid"></i></span><span class="tile-name"></span>`);
+  const label = b.querySelector('.tile-name');
+  label.textContent = boxesOpened.has(i) ? x.title : `Surprise ${i + 1}`;
+  b.addEventListener('click', () => {
+    if (!boxesOpened.has(i)) {
+      b.classList.add('open');
+      boxesOpened.add(i);
+      store.set('boxes', [...boxesOpened]);
+      boxesCount();
+      label.textContent = x.title;
+    }
+    showRead({ tag: '🎁 A little surprise', title: x.title, text: x.text });
+  });
+  $('boxes').appendChild(b);
+});
+boxesCount();
+
+// ---------- start fresh ----------
+$('reset').addEventListener('click', () => {
+  if (!confirm('Start fresh? This clears redeemed coupons and opened surprise boxes on this device.')) return;
+  store.set('boxes', []);
+  store.set('vouchers', {});
+  location.reload();
+});
+</script>
+</body>
+</html>
